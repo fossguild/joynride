@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+# SPDX-FileCopyrightText: 2024 CCOS-USP <https://ccos.icmc.usp.br
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+prog=$(basename $0)
+
+filename="$1"
+if test -z "$filename"; then
+    echo "Usage: $prog <file-name>"
+    exit 1
+fi
+
+if ! reuse --version &> /dev/null; then
+    echo "Tool 'reuse' not found; re-run the bootstrap script."
+    exit 1
+fi
+
+user=$(git config user.name)
+email=$(git config user.email)
+license="GPL-3.0-or-later"
+ORG="CCOS-USP <https://ccos.icmc.usp.br"
+
+if ! test -f $filename; then
+    printf "File '$filename' not found; create it? (y|N) "
+    read opt
+    if test "$opt" == y || test "$opt" == "Y"; then
+	touch "$filename"
+	reuse annotate --copyright="$ORG" --license="$license" "$filename"
+	reuse annotate --copyright="$user <$email>" --license="$license" "$filename"
+    else
+	echo "Aborted"
+    fi
+else
+	reuse annotate --copyright="$ORG" --license="$license" "$filename"    
+fi
+
+if test "$2" == "me"; then
+	reuse annotate --copyright="$user <$email>" --license="$license" "$filename"
+fi
+

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# SPDX-FileCopyrightText: 2024 CCOS-USP <https://ccos.icmc.usp.br
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+prog=$(basename $0)
+
+if ! reuse --version &> /dev/null; then
+    echo "Tool 'reuse' not found; re-run the bootstrap script."
+    exit 1
+fi
+
+reuse lint
