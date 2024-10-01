@@ -21,9 +21,11 @@ def check_dev_tool(tool_name):
     print(f"checking for {tool_name}: {''.ljust(30 - len(tool_name) - 1)}", end='')
     if shutil.which(tool_name) is not None:
         print(f"yes")
+        return True
     else:
         print(f"no   (developer tool)")
-        
+        return False
+
 def check_tool(tool_name):
     # Look for the tool in the system's PATH
     print(f"checking for {tool_name}: {''.ljust(30 - len(tool_name) - 1)}", end='')
@@ -32,7 +34,7 @@ def check_tool(tool_name):
     else:
         print(f"no   (required; please install.)")
         sys.exit(1)
-        
+
 def main():
 
     # Check for developer tools.
