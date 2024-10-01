@@ -1,3 +1,7 @@
+-- SPDX-FileCopyrightText: 2024 CCOS-USP <https://ccos.icmc.usp.br
+--
+-- SPDX-License-Identifier: GPL-3.0-or-later
+
 CREATE TABLE "User" (
     id varchar PRIMARY KEY,
     "name" varchar NOT NULL,
