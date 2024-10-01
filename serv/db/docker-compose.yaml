@@ -12,10 +12,16 @@ services:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: 1234
     ports:
-      - '5432:5432'
+      - ${POSTGRES_EXPOSED_PORT:-5432}:5432
     volumes:
       - ./pgdata:/var/lib/postgresql/data
       - ./scripts:/docker-entrypoint-initdb.d
+    networks:
+      - joynride_network
 
 volumes:
   pgdata:
+
+networks:
+  joynride_network:
+    driver: bridge
