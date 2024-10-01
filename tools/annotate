@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# SPDX-FileCopyrightText: 2024 CCOS-USP <https://ccos.icmc.usp.br
+# SPDX-FileCopyrightText: 2024 The JoynRide Authors and CCOS-USP <https://ccos.icmc.usp.br>
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -20,7 +20,7 @@ fi
 user=$(git config user.name)
 email=$(git config user.email)
 license="GPL-3.0-or-later"
-ORG="CCOS-USP <https://ccos.icmc.usp.br"
+ORG="The JoynRide Authors and CCOS-USP <https://ccos.icmc.usp.br>"
 
 if ! test -f $filename; then
     printf "File '$filename' not found; create it? (y|N) "
