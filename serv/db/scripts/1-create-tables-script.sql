@@ -2,7 +2,7 @@
 --
 -- SPDX-License-Identifier: GPL-3.0-or-later
 
-CREATE TABLE "User" (
+CREATE TABLE "user" (
     id varchar PRIMARY KEY,
     "name" varchar NOT NULL,
     phone varchar,
@@ -18,7 +18,22 @@ CREATE TABLE "User" (
     community_id varchar NOT NULL UNIQUE
 );
 
-CREATE TABLE Ride (
+CREATE TABLE vehicle (
+    id varchar PRIMARY KEY,
+    model varchar NOT NULL,
+    licence_plate varchar NOT NULL UNIQUE,
+    color varchar NOT NULL
+);
+
+CREATE TABLE user_vehicle (
+    id varchar PRIMARY KEY,
+    "user" varchar NOT NULL,
+    vehicle varchar NOT NULL,
+    FOREIGN KEY ("user") REFERENCES "user"(id),
+    FOREIGN KEY (vehicle) REFERENCES vehicle(id)
+);
+
+CREATE TABLE ride (
     id varchar PRIMARY KEY,
     driver varchar NOT NULL,
     departure_address varchar NOT NULL,
@@ -26,49 +41,34 @@ CREATE TABLE Ride (
     departure_time date NOT NULL,
     total_seats int NOT NULL,
     vehicle varchar NOT NULL,
-    FOREIGN KEY (driver) REFERENCES "User"(id),
-    FOREIGN KEY (vehicle) REFERENCES Vehicle(id)
+    FOREIGN KEY (driver) REFERENCES "user"(id),
+    FOREIGN KEY (vehicle) REFERENCES vehicle(id)
 );
 
-CREATE TABLE UserRide (
+CREATE TABLE user_ride (
     id varchar PRIMARY KEY,
     ride varchar NOT NULL,
-    user varchar NOT NULL,
+    "user" varchar NOT NULL,
     status varchar NOT NULL,
-    FOREIGN KEY (ride) REFERENCES Ride(id),
-    FOREIGN KEY (user) REFERENCES "User"(id)
+    FOREIGN KEY (ride) REFERENCES ride(id),
+    FOREIGN KEY ("user") REFERENCES "user"(id)
 );
 
-CREATE TABLE UserRideRating (
+CREATE TABLE user_ride_rating (
     id varchar PRIMARY KEY,
     user_ride varchar NOT NULL,
     review_from varchar NOT NULL,
     review_to varchar NOT NULL,
     rating float NOT NULL,
-    FOREIGN KEY (user_ride) REFERENCES UserRide(id),
-    FOREIGN KEY (review_from) REFERENCES "User"(id),
-    FOREIGN KEY (review_to) REFERENCES "User"(id)
+    FOREIGN KEY (user_ride) REFERENCES user_ride(id),
+    FOREIGN KEY (review_from) REFERENCES "user"(id),
+    FOREIGN KEY (review_to) REFERENCES "user"(id)
 );
 
-CREATE TABLE Place (
+CREATE TABLE place (
     id varchar PRIMARY KEY,
     "name" varchar NOT NULL,
     "address" varchar NOT NULL,
     latitude float NOT NULL,
     longitude float NOT NULL
-);
-
-CREATE TABLE Vehicle (
-    id varchar PRIMARY KEY,
-    model varchar NOT NULL,
-    licence_plate varchar NOT NULL UNIQUE,
-    color varchar NOT NULL
-);
-
-CREATE TABLE UserVehicle (
-    id varchar PRIMARY KEY,
-    user varchar NOT NULL,
-    vehicle varchar NOT NULL,
-    FOREIGN KEY (user) REFERENCES "User"(id),
-    FOREIGN KEY (vehicle) REFERENCES Vehicle(id)
 );
