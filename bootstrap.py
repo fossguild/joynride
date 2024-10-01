@@ -13,8 +13,10 @@ import subprocess
 ## Check for tools.
 ##
 
-import sys
+import re
 import shutil
+import subprocess
+import sys
 
 def check_dev_tool(tool_name):
     # Look for the tool in the system's PATH
@@ -35,14 +37,25 @@ def check_tool(tool_name):
         print(f"no   (required; please install.)")
         sys.exit(1)
 
+def check_reuse():
+    if check_dev_tool("reuse"):
+        version = subprocess.run(["reuse", "--version"],
+                                 stdout=subprocess.PIPE,
+                                 stderr=subprocess.PIPE,
+                                 text = True).stdout
+        print(f"Cheking for version number to be 4.*.*:\t\t", end='')
+        if re.search(r"4\.\d+\.\d+", version) is not None:
+            print("yes")
+        else:
+            print("no")
+
 def main():
 
     # Check for developer tools.
-    
-    check_dev_tool("reuse")
+    check_reuse();
 
     # Check for build resources.
-    
+
     check_tool("go")
 
 if __name__ == "__main__":
