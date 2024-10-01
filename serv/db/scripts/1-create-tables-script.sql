@@ -15,7 +15,7 @@ CREATE TABLE "User" (
     number_of_rides_taken int NOT NULL,
     img_url varchar,
     "role" varchar NOT NULL,
-    community_id varchar NOT NULL UNIQUE,
+    community_id varchar NOT NULL UNIQUE
 );
 
 CREATE TABLE Ride (
@@ -55,14 +55,14 @@ CREATE TABLE Place (
     "name" varchar NOT NULL,
     "address" varchar NOT NULL,
     latitude float NOT NULL,
-    longitude float NOT NULL,
+    longitude float NOT NULL
 );
 
 CREATE TABLE Vehicle (
     id varchar PRIMARY KEY,
     model varchar NOT NULL,
     licence_plate varchar NOT NULL UNIQUE,
-    color varchar NOT NULL,
+    color varchar NOT NULL
 );
 
 CREATE TABLE UserVehicle (
