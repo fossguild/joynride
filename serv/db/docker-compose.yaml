@@ -1,0 +1,27 @@
+# SPDX-FileCopyrightText: 2024 CCOS-USP <https://ccos.icmc.usp.br
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+services:
+  db:
+    image: postgres:17.0-alpine3.20
+    container_name: joynride_db
+    restart: always
+    environment:
+      POSTGRES_DB: joynride
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - ${POSTGRES_EXPOSED_PORT:-5432}:5432
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+      - ./scripts:/docker-entrypoint-initdb.d
+    networks:
+      - joynride_network
+
+volumes:
+  pgdata:
+
+networks:
+  joynride_network:
+    driver: bridge
