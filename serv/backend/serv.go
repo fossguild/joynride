@@ -4,8 +4,23 @@
 
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "net/http"
+)
+
+func handler (w http.ResponseWriter, r *http.Request){
+    fmt.Println("Hello from serv!")
+}
 
 func main() {
-    fmt.Println("Hello from serv!")
+    http.HandleFunc("/", handler)
+
+    port := ":80"
+    fmt.Println("Listening to port", port)
+    
+    err := http.ListenAndServe(port, nil)
+    if err != nil {
+        fmt.Println("Failed to start server:", err)
+    }
 }
