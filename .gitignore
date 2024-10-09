@@ -7,3 +7,5 @@
 tools/*~
 
 serv/db/pgdata
+
+serv/backend/tmp

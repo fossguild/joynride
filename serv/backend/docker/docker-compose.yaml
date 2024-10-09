@@ -1,0 +1,19 @@
+name: joynride_backend
+
+services:
+  api:
+    container_name: api
+    build:
+      dockerfile: Dockerfile
+      context: .
+      target: dev
+    ports:
+      - 8080:8080
+    volumes:
+      - ..:/opt/app/api
+    networks:
+      - joynride_network
+
+networks:
+  joynride_network:
+    driver: bridge
