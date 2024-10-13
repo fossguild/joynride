@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2024 The JoynRide Authors and CCOS-USP <https://ccos.icmc.usp.br>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 FROM golang:1.23 AS base
 
 # Create another stage called "dev" that is based off of our "base" stage (so we have golang available to us)
