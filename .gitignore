@@ -8,4 +8,6 @@ tools/*~
 
 serv/db/pgdata
 
-serv/backend/tmp
+**/tmp/
+
+**/*.env
