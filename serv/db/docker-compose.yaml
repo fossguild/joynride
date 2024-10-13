@@ -9,11 +9,11 @@ services:
     container_name: joynride_db
     restart: always
     environment:
-      POSTGRES_DB: joynride
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: ${DB_DATABASE_NAME:-joynride}
+      POSTGRES_USER: ${DB_USER:-admin}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-1234}
     ports:
-      - ${POSTGRES_EXPOSED_PORT:-5432}:5432
+      - ${DB_EXPOSED_PORT:-5432}:5432
     volumes:
       - ./pgdata:/var/lib/postgresql/data
     networks:
@@ -22,7 +22,7 @@ services:
   migrate: &basemigrate
     profiles: ['tools']
     image: migrate/migrate
-    entrypoint: 'migrate -database postgresql://admin:1234@db:5432/joynride?sslmode=disable -path /tmp/migrations'
+    entrypoint: 'migrate -database postgresql://${DB_USER:-admin}:${DB_PASSWORD:-1234}@db:5432/${DB_DATABASE_NAME:-joynride}?sslmode=disable -path /tmp/migrations'
     command: up
     depends_on:
       - db
