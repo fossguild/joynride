@@ -8,62 +8,85 @@ SPDX-License-Identifier: CC0-1.0
 
 Joynride is a community hitchhiking app.
 
-**joynride é um projeto que visa integrar um sistema de carona dentro de diferentes comunidades.** 
+**joynride is a project that aims to integrate a hitchhiking system into
+different communities.**
 
-Em desenvolvimento para a disciplina de Computação Distribuída, com as orientações do docente Francisco José Monaco e participação dos alunos, o joynride visa proporcionar uma plataforma em que se pode conectar com os membros da sua comunidade, como alunos universitários, e proporcionar um esquema de fornecer caronas gratuitamente entre os membros.
+Being developed for the Distributed Computing subject, with the guidance of
+professor Francisco José Monaco and the participation of the students, joynride
+aims to provide a platform where you can connect with members of your community,
+such as university students, and provide a system for providing free rides
+between members.
 
-## Sobre 
+## About
 
-O projeto, desenvolvido por alunos da engenharia e ciência da computação da USP São Carlos, visa promover um aplicativo que permite fornecer ou receber caronas de forma gratuita entre membros que compõem a mesma comunidade, facilitando a mobilidade e incentivando o compartilhamento de trajetos já planejados pelos motoristas, utilizando micro recompensas como forma de estímulo para o uso contínuo da aplicação.
-
-## Objetivos e Motivação
-
-Estimular uma integração de caronas entre membros de uma comunidade, facilitando o deslocamento e promovendo a mobilidade sustentável. O aplicativo planeja estimular a carona para pessoas que já iriam fazer o percurso e possuem vagas disponíveis no carro, sem fins lucrativos, mas podendo haver estímulos dentro da comunidade para incentivar as viagens.
-
-## Funcionamento
-
-Dentro do aplicativo, pode-se atuar como passageiro ou motorista, sendo possível para uma mesma pessoa ser ambos, dependendo do contexto, podendo tanto oferecer quanto pedir caronas, em troca de micro recompensas para incentivar a carona entre os membros. A parte visual do aplicativo irá funcionar como aplicativos de relacionamento, em que será possível ver as caronas disponíveis para ir a pontos específicos de alta frequência dentro da comunidade, fornecendo também pontos de partida.
-
-Para os passageiros, será possível aplicar para caronas disponíveis segundo seus interesses, as quais apresentarão o número de lugares disponíveis do carro, os horários e locais especificados pelo motorista. Haverá também avaliações sobre o motorista, baseado em um esquema de notas, além de comentários sobre o comportamento e habilidades de direção para proporcionar uma melhor experiência.
-
-Já do lado do motorista, irão aparecer todos que aplicaram para a carona informada, além de informações dos passageiros, seguindo o mesmo esquema de notas e comentários, em que o motorista decidirá quem aceitar para a corrida, podendo preencher no máximo as vagas limitadas do carro. 
-
-Planeja-se também a troca de mensagem entre o motorista e quem recebe a carona, especificando ou negociando localizações de partida e chegada, para tornar a viagem melhor a todos.
+The project, developed by engineering and computer science students from USP São
+Carlos, aims to promote an application that allows providing or receiving free
+rides between community members, facilitating mobility and encouraging drivers
+to share routes that have already been planned, using micro-rewards as a way of
+encouraging continuous use of the application.
 
 
-## Comunidade
+## Goals and Motivation
 
-### Autenticação
+Encouraging the integration of shared rides between community members makes it
+easier to get around and promotes sustainable mobility. The app plans encourage
+people who are already going to make the journey and have spaces available in
+their cars to offer rides on a non-profit basis, but there may be incentives
+within the community to encourage travel.
 
-Por meio de emails institucionais, será possível adentrar a comunidade desejada. Ou algum outro esquema. 
+## How It Works
 
-## Arquitetura do Sistema
+Within the app, the user can be a passenger, a driver or even both depending on
+the context, offering or asking for a ride in exchange for micro-rewards in
+order to stimulate shared rides between the community members. The app design
+will be similar to relationship apps, in which will be possible to find
+available rides to reach the most frequent destinations, also providing
+departure points.
 
-### Camada Frontend
+The passengers can apply for available rides according to their interests, which
+will display the number of available car seats, times, and locations specified
+by the driver. There will also be ratings of the driver, as well as comments on
+behavior and driving skills to provide a better experience.
+
+On the other hand, the drivers will be able to see all the users who applied for
+the ride that they are offering, as well as the passenger's information,
+ratings, and comments. Based on that, the driver will decide who to accept for
+the ride.
+
+It is also intended to allow communication between the driver and the hitchhiker
+via messages, specifying or negotiating departure and arrival locations, to make
+the journey better for everyone.
+
+## Community
+
+### Authentication
+
+The users will be able to join the desired community through institutional
+emails.
+
+## System Architecture
+
+### Frontend 
  ...
 
-### Camada Backend
-  ...
+### Backend
+ ...
 
-### Banco de dados
+### Database
 
-Para armazenar informações como:
+To store information such as:
+- Drivers and passengers profiles
+- Ride history
+- Ratings and comments
 
-- Perfis de motoristas e passageiros
-- Histórico de corridas
-- Avaliações e comentários
+## Features
 
-     
-    
+- Drivers and passengers registration
+- Offering rides with details of time and place
+- Passenger application for rides
+- Rating system and comments
+- Message exchange between users
 
-## Funcionalidades
+## Functional and non-functional requirements
 
-- Cadastro de motoristas e passageiros
-- Inserção de caronas com detalhes de horário e local
-- Aplicação de passageiros para caronas
-- Sistema de avaliação e comentários
-- Sistema de troca de mensagens entre usuários
-
-## Requisitos Funcionais e não funcionais
-
-## Cronograma
+## Schedule
