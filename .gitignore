@@ -7,3 +7,7 @@
 tools/*~
 
 serv/db/pgdata
+
+**/tmp/
+
+**/*.env

@@ -8,3 +8,4 @@ JoynRide authors
 ================
 
 	* Arthur Grillo Queiroz Cabral
+	* Arthur Vergaças (arthurvergacas @ GitHub)
