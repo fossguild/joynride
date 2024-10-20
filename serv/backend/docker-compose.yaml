@@ -1,0 +1,27 @@
+# SPDX-FileCopyrightText: 2024 The JoynRide Authors and CCOS-USP <https://ccos.icmc.usp.br>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+name: joynride_backend
+
+services:
+  api:
+    container_name: joynride_api
+    build:
+      dockerfile: Dockerfile
+      context: .
+      target: dev
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/opt/app/api
+    environment:
+      API_SERVER_ADDR: ${API_SERVER_ADDR:-':8080'}
+      DATABASE_URL: postgresql://${DB_USER:-admin}:${DB_PASSWORD:-1234}@db:${DB_PORT:-5432}/${DB_DATABASE_NAME:-joynride}?sslmode=disable
+    networks:
+      - joynride_network
+
+networks:
+  joynride_network:
+    name: joynride_network
+    driver: bridge
