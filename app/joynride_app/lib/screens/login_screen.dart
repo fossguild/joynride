@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:joynride_app/widgets/simple_button.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+  const LoginScreen(this.login, {super.key});
+
+  final void Function() login;
 
   @override
   // _LoginScreenState createState() => _LoginScreenState();
@@ -12,6 +15,13 @@ class _LoginScreenState extends State<LoginScreen> {
   bool _showFields = false;
   final double _logoHeight = 250;
   final double _curvedTextWidth = 250;
+
+  void login() {
+    widget.login();
+    // ScaffoldMessenger.of(context).showSnackBar(
+    //   const SnackBar(content: Text('Login is not yet implemented')),
+    // );
+  }
 
   void _toggleFields() {
     setState(() {
@@ -119,23 +129,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                     const SizedBox(height: 20),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: colorSchema.tertiary,
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 80, vertical: 15),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
-                      ),
-                      onPressed: _toggleFields,
-                      child: Text(
-                        'Entrar',
-                        style: TextStyle(
-                          color: colorSchema.onTertiary,
-                          fontSize: 18,
-                        ),
-                      ),
+                    SimpleButton(
+                      text: 'Entrar',
+                      onPressed: login,
                     ),
                   ],
                 ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:joynride_app/screens/home_screen.dart';
 import 'package:joynride_app/screens/login_screen.dart';
 import 'package:joynride_app/utils/constants.dart';
 
@@ -6,8 +7,21 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  bool _logged = false;
+
+  void login() {
+    setState(() {
+      _logged = true;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +34,7 @@ class MyApp extends StatelessWidget {
           onTertiary: Colors.black,
         );
     return MaterialApp(
-      home: const LoginScreen(),
+      home: _logged ? const HomeScreen() : LoginScreen(login),
       theme: ThemeData.from(
         colorScheme: colorScheme,
         useMaterial3: true,

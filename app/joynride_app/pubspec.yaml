@@ -62,6 +62,7 @@ flutter:
   assets:
     - assets/images/logo/joynride_3.png
     - assets/images/logo/joynride_curved_text.png
+    - assets/images/backgrounds/background_1_blue.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
