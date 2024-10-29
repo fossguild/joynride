@@ -46,6 +46,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 340,
                 width: double.infinity,
                 child: Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(16),
+                      bottomRight: Radius.circular(16),
+                    ),
+                  ),
                   margin: EdgeInsets.all(0),
                   color: Colors.white,
                 ),
