@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
           tertiary: yellow,
           onPrimary: Colors.white,
           onSecondary: Colors.white,
-          onTertiary: Colors.black,
+          onTertiary: Colors.white,
         );
     return MaterialApp(
       home: _logged ? const HomeScreen() : LoginScreen(login),
