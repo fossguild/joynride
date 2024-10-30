@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:joynride_app/screens/search_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -23,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 AssetImage('assets/images/backgrounds/background_1_blue.png'),
           ),
         ),
-        child: const Placeholder(),
+        child: [const SearchScreen(), for(var i = 0; i < 4; i++) Placeholder()][_currentPageIndex],
       ),
       bottomNavigationBar: Container(
         clipBehavior: Clip.antiAlias,
