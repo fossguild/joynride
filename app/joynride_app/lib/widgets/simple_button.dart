@@ -27,7 +27,10 @@ class SimpleButton extends StatelessWidget {
       onPressed: onPressed,
       label: Text(
         text,
-        style: textTheme.titleLarge,
+        style: textTheme.titleLarge!.copyWith(
+          color: colorSchema.onTertiary,
+          fontWeight: FontWeight.bold,
+        ),
       ),
     );
   }
