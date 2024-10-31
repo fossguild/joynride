@@ -1,83 +1,88 @@
 import 'package:flutter/material.dart';
+import 'package:joynride_app/widgets/quantity_selector.dart';
 import 'package:joynride_app/widgets/simple_button.dart';
+import 'package:joynride_app/widgets/simple_textfield.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    //var theme = Theme.of(context);
-    //var textStyle = theme.textTheme;
+    const double spacing = 16;
+    final theme = Theme.of(context);
+    final textTheme = theme.textTheme;
 
-    // TODO: implement build
     return Container(
       alignment: Alignment.center,
-      margin: const EdgeInsets.all(20.0),
-      child: Card(
-        child: Padding(
-          padding: EdgeInsets.all(24.0),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const Text(
-                'Busque sua carona \n com segurança',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
-                //style: textStyle.textTheme
-              ),
-              const SizedBox(
-                height: 48.0,
-              ),
-              const TextField(
-                decoration: InputDecoration(
-                  labelText: 'Local de chegada',
-                  hintText: 'ponto',
-                  hintStyle: TextStyle(color: Colors.grey),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(8.0),
-                    ),
+      margin: const EdgeInsets.all(spacing),
+      child: SingleChildScrollView(
+        child: Card(
+          child: Padding(
+            padding: const EdgeInsets.all(spacing),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  'Busque sua carona com segurança',
+                  textAlign: TextAlign.center,
+                  style: textTheme.headlineLarge!.copyWith(
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-              ),
-              const SizedBox(
-                height: 24.0,
-              ),
-              const TextField(
-                decoration: InputDecoration(
-                  labelText: 'Local de partida',
-                  hintText: 'ponto',
-                  hintStyle: TextStyle(color: Colors.grey),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(8.0),
-                    ),
-                  ),
+                const SizedBox(
+                  height: 2 * spacing,
                 ),
-              ),
-              const SizedBox(
-                height: 24.0,
-              ),
-              const TextField(
-                decoration: InputDecoration(
+                const SimpleTextField(
+                  labelText: 'Local de Partida',
+                  hintText: 'Ponto',
+                  icon: Icon(Icons.trip_origin_rounded),
+                ),
+                const SizedBox(
+                  height: spacing,
+                ),
+                const SimpleTextField(
+                    labelText: 'Local de Chegada',
+                    hintText: 'Ponto',
+                    icon: Icon(Icons.place)),
+                const SizedBox(
+                  height: spacing,
+                ),
+                const SimpleTextField(
                   labelText: 'Data',
                   hintText: 'dd/mm/yyyy',
-                  hintStyle: TextStyle(color: Colors.grey),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(8.0),
-                    ),
-                  ),
+                  icon: Icon(Icons.today),
+                  textInputType: TextInputType.number,
                 ),
-              ),
-              const SizedBox(
-                height: 120.0,
-              ),
-              SimpleButton(
-                text: 'Procurar',
-                onPressed: () {},
-              ),
-            ],
+                const SizedBox(
+                  height: spacing,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Quantidade \nde Viajantes',
+                      textAlign: TextAlign.center,
+                      style: textTheme.bodyLarge!
+                          .copyWith(fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(
+                      width: spacing,
+                    ),
+                    QuantitySelector(
+                      min: 1,
+                      initialValue: 1,
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: spacing,
+                ),
+                SimpleButton(
+                  text: 'Procurar',
+                  onPressed: () {},
+                ),
+              ],
+            ),
           ),
         ),
       ),
