@@ -8,6 +8,7 @@ import (
 	"errors"
 
 	place_service "github.com/fossguild/joynride/tree/dev/serv/api/services/place"
+	user_service "github.com/fossguild/joynride/tree/dev/serv/api/services/user"
 	"github.com/fossguild/joynride/tree/dev/serv/storage"
 	"github.com/gin-gonic/gin"
 )
@@ -33,6 +34,9 @@ func (api *Api) Start() {
 
 	router.GET("places", func(ctx *gin.Context) { place_service.GetPlaces(ctx, api.Storage) })
 	router.POST("places", func(ctx *gin.Context) { place_service.CreatePlace(ctx, api.Storage) })
+
+	router.GET("users", func(ctx *gin.Context) { user_service.GetUsers(ctx, api.Storage) })
+	router.POST("users", func(ctx *gin.Context) { user_service.CreateUser(ctx, api.Storage) })
 
 	router.Run(api.addr)
 }
