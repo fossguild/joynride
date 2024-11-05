@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:joynride_app/screens/home_screen.dart';
 import 'package:joynride_app/screens/login_screen.dart';
 import 'package:joynride_app/utils/constants.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,6 +36,7 @@ class _MyAppState extends State<MyApp> {
         );
 
     final textTheme = Theme.of(context).textTheme.apply(
+          fontFamily: GoogleFonts.roboto().fontFamily,
           displayColor: grayBlue,
           bodyColor: grayBlue,
         );
