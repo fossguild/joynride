@@ -1,0 +1,44 @@
+name: build backend
+
+on:
+  push:
+  pull_request:
+
+permissions: read-all
+defaults:
+  run:
+    working-directory: ./serv/backend
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+          cache-dependency-path: './serv/backend/go.sum'
+
+      - run: go build
+
+  format:
+    name: Check Formatting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+          cache-dependency-path: './serv/backend/go.sum'
+
+      - run: |
+          if gofmt -d -l . | tee gofmt.out | grep -q '.'; then
+            cat gofmt.out
+            echo "gofmt found formatting issues. Please run 'gofmt' to fix them."
+          exit 1
+          else
+            echo "All Go files are properly formatted."
+          fi
