@@ -12,6 +12,7 @@ class _HomeScreenState extends State<HomeScreen> {
   int _currentPageIndex = 0;
   @override
   Widget build(BuildContext context) {
+    var iconTheme = Theme.of(context).iconTheme;
     final colorScheme = Theme.of(context).colorScheme;
 
     return Container(
@@ -44,25 +45,45 @@ class _HomeScreenState extends State<HomeScreen> {
               });
             },
             selectedIndex: _currentPageIndex,
-            destinations: const <Widget>[
+            destinations: <Widget>[
               NavigationDestination(
-                icon: Icon(Icons.place),
+                icon: Icon(
+                  Icons.place,
+                  color: iconTheme.color!.withAlpha(127),
+                ),
+                selectedIcon: const Icon(Icons.place),
                 label: 'Procurar',
               ),
               NavigationDestination(
-                icon: Icon(Icons.commute),
+                icon: Icon(
+                  Icons.commute,
+                  color: iconTheme.color!.withAlpha(127),
+                ),
+                selectedIcon: const Icon(Icons.commute),
                 label: 'Oferecer',
               ),
               NavigationDestination(
-                icon: Icon(Icons.local_taxi),
+                icon: Icon(
+                  Icons.local_taxi,
+                  color: iconTheme.color!.withAlpha(127),
+                ),
+                selectedIcon: const Icon(Icons.local_taxi),
                 label: 'Caronas',
               ),
               NavigationDestination(
-                icon: Icon(Icons.inbox),
+                icon: Icon(
+                  Icons.inbox,
+                  color: iconTheme.color!.withAlpha(127),
+                ),
+                selectedIcon: const Icon(Icons.inbox),
                 label: 'Mensagens',
               ),
               NavigationDestination(
-                icon: Icon(Icons.account_circle),
+                icon: Icon(
+                  Icons.account_circle,
+                  color: iconTheme.color!.withAlpha(127),
+                ),
+                selectedIcon: const Icon(Icons.account_circle),
                 label: 'Perfil',
               ),
             ],

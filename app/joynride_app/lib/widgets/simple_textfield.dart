@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:joynride_app/utils/constants.dart';
 
 class SimpleTextField extends StatelessWidget {
   const SimpleTextField({
@@ -18,11 +19,12 @@ class SimpleTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       keyboardType: textInputType,
+      style: const TextStyle(color: grayBlue),
       decoration: InputDecoration(
         labelText: labelText,
         hintText: hintText,
         prefixIcon: icon,
-        hintStyle: const TextStyle(color: Colors.grey),
+        hintStyle: TextStyle(color: grayBlue.withAlpha(127)),
         border: const OutlineInputBorder(
           borderRadius: BorderRadius.all(
             Radius.circular(10.0),

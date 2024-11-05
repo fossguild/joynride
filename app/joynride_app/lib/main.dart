@@ -33,10 +33,17 @@ class _MyAppState extends State<MyApp> {
           onSecondary: Colors.white,
           onTertiary: Colors.white,
         );
+
+    final textTheme = Theme.of(context).textTheme.apply(
+          displayColor: grayBlue,
+          bodyColor: grayBlue,
+        );
+
     return MaterialApp(
       home: _logged ? const HomeScreen() : LoginScreen(login),
       theme: ThemeData.from(
         colorScheme: colorScheme,
+        textTheme: textTheme,
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: true,

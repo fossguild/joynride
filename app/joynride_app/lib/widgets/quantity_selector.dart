@@ -103,7 +103,6 @@ class _QuantitySelectorState extends State<QuantitySelector> {
                 elevation: WidgetStatePropertyAll(elevation),
                 shape: WidgetStatePropertyAll(
                   RoundedRectangleBorder(
-                    // side: BorderSide(style: BorderStyle.solid, width: 0.5),
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(radius),
                       bottomRight: Radius.circular(radius),
