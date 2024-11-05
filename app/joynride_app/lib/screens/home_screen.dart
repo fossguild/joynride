@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:joynride_app/screens/offer_screen.dart';
 import 'package:joynride_app/screens/search_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -25,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: [
-          const SearchScreen(),
+          const SearchScreen(), const OfferScreen(),
           for (var i = 0; i < 4; i++) const Placeholder()
         ][_currentPageIndex],
         bottomNavigationBar: Container(
