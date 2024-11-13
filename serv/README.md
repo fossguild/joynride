@@ -4,11 +4,11 @@ SPDX-FileCopyrightText: 2024 The JoynRide Authors and CCOS-USP <https://ccos.icm
 SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
-# Joynride Database
+# Joynride Server
 
-This directory contains the application database.
+This directory contains the joynride server application.
 
-## Running the Database
+## Running the Application
 
 ### Environment Variables
 
@@ -21,23 +21,22 @@ the `.env.example` file. To set up your environment:
 
 Renaming is necessary because `docker compose` looks for a `.env` file in the same directory of the `docker-compose.yaml` file.
 
-### Getting the Database Up
+### Getting the Application Up
 
-To run the database, use the command:
+To run the application, use:
 
 ```bash
-# while in serv/db
 docker compose up
 ```
 
-If everything is set up correctly, you should be able to access the database using the credentials defined via environment variables.
+If everything is set up correctly, both the API and the database should be running and ready to be accessed.
 
-## Migrations
+### Database Migrations
 
 Every change to the database must be made through a migration. This way, we ensure that all modifications are version-controlled,
 maintainable, and can be easily applied or rolled back across different environments.
 
-### Creating a Migration
+#### Creating a Migration
 
 To create a new migration, use:
 
@@ -50,7 +49,7 @@ This command will generate two files in the migrations folder:
 - <name_of_your_migration>.up.sql – Used to apply the migration
 - <name_of_your_migration>.down.sql – Used to roll back the migration
 
-### Applying Migrations
+#### Applying Migrations
 
 To apply all pending migrations, run:
 
@@ -58,7 +57,7 @@ To apply all pending migrations, run:
 docker compose --profile tools run --rm migrate up
 ```
 
-### Rolling Back Migrations
+#### Rolling Back Migrations
 
 To roll back migrations, use:
 
@@ -73,6 +72,20 @@ rolled back. For example, to roll back the last 2 migrations, use:
 docker compose --profile tools run --rm migrate down 2
 ```
 
-### Additional Information
+#### Additional Information
 
 For more details about the tool and its command-line interface, visit the [official golang-migrate repository](https://github.com/golang-migrate/migrate).
+
+## Building for Production
+
+A Docker image of the application can be generated using:
+
+```bash
+docker build -t joynride_server .
+```
+
+Once the build is complete, you can run the image inside a container with this command:
+
+```bash
+docker run --env=file .env joynride_api
+```

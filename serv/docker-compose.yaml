@@ -1,9 +1,23 @@
 # SPDX-FileCopyrightText: 2024 CCOS-USP <https://ccos.icmc.usp.br
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
-name: joynride_db
-
 services:
+  api:
+    container_name: joynride_api
+    build:
+      dockerfile: Dockerfile
+      context: ./backend
+      target: dev
+    ports:
+      - 8080:8080
+    volumes:
+      - ./backend:/opt/app/api
+    environment:
+      API_SERVER_ADDR: ${API_SERVER_ADDR:-':8080'}
+      DATABASE_URL: postgresql://${DB_USER:-admin}:${DB_PASSWORD:-1234}@db:5432/${DB_DATABASE_NAME:-joynride}?sslmode=disable
+    networks:
+      - joynride_network
+
   db:
     image: postgres:17.0-alpine3.20
     container_name: joynride_db
@@ -13,9 +27,9 @@ services:
       POSTGRES_USER: ${DB_USER:-admin}
       POSTGRES_PASSWORD: ${DB_PASSWORD:-1234}
     ports:
-      - ${DB_EXPOSED_PORT:-5432}:5432
+      - ${DB_PORT:-5432}:5432
     volumes:
-      - ./pgdata:/var/lib/postgresql/data
+      - ./db/pgdata:/var/lib/postgresql/data
     networks:
       - joynride_network
 
@@ -27,7 +41,7 @@ services:
     depends_on:
       - db
     volumes:
-      - ./migrations:/tmp/migrations
+      - ./db/migrations:/tmp/migrations
     networks:
       - joynride_network
 
@@ -42,4 +56,4 @@ volumes:
 networks:
   joynride_network:
     name: joynride_network
-    external: true
+    driver: bridge
