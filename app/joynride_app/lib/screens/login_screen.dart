@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:joynride_app/utils/strings/login_strings.dart';
 import 'package:joynride_app/widgets/simple_button.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -80,7 +81,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       const Column(
                         children: [
                           Text(
-                            'Log In',
+                            LoginStrings.loginTitle,
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 36,
@@ -88,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                           Text(
-                            'Faça login pelo sistema unificado JupiterWeb',
+                            LoginStrings.loginDescription,
                             style: TextStyle(
                               color: Colors.white,
                             ),
@@ -136,7 +137,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     const SizedBox(height: 20),
                     SimpleButton(
-                      text: 'Entrar',
+                      text: LoginStrings.loginButton,
                       onPressed: login,
                     ),
                   ],
