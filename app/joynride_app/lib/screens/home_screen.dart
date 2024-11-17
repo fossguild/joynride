@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:joynride_app/screens/offer_screen.dart';
 import 'package:joynride_app/screens/search_screen.dart';
+import 'package:joynride_app/utils/strings/home_string.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -26,7 +27,8 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: [
-          const SearchScreen(), const OfferScreen(),
+          const SearchScreen(),
+          const OfferScreen(),
           for (var i = 0; i < 4; i++) const Placeholder()
         ][_currentPageIndex],
         bottomNavigationBar: Container(
@@ -53,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: iconTheme.color!.withAlpha(127),
                 ),
                 selectedIcon: const Icon(Icons.place),
-                label: 'Procurar',
+                label: HomeStrings.searchNavigationLabel,
               ),
               NavigationDestination(
                 icon: Icon(
@@ -61,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: iconTheme.color!.withAlpha(127),
                 ),
                 selectedIcon: const Icon(Icons.commute),
-                label: 'Oferecer',
+                label: HomeStrings.offerNavigationLabel,
               ),
               NavigationDestination(
                 icon: Icon(
@@ -69,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: iconTheme.color!.withAlpha(127),
                 ),
                 selectedIcon: const Icon(Icons.local_taxi),
-                label: 'Caronas',
+                label: HomeStrings.ridesNavigationLabel,
               ),
               NavigationDestination(
                 icon: Icon(
@@ -77,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: iconTheme.color!.withAlpha(127),
                 ),
                 selectedIcon: const Icon(Icons.inbox),
-                label: 'Mensagens',
+                label: HomeStrings.messagesNavigationLabel,
               ),
               NavigationDestination(
                 icon: Icon(
@@ -85,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: iconTheme.color!.withAlpha(127),
                 ),
                 selectedIcon: const Icon(Icons.account_circle),
-                label: 'Perfil',
+                label: HomeStrings.profileNavigationLabel,
               ),
             ],
           ),

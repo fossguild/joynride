@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:joynride_app/utils/strings/offer_strings.dart';
+import 'package:joynride_app/utils/strings/ride_strings.dart';
 import 'package:joynride_app/widgets/quantity_selector.dart';
 import 'package:joynride_app/widgets/simple_button.dart';
 import 'package:joynride_app/widgets/simple_textfield.dart';
@@ -26,7 +28,7 @@ class OfferScreen extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'Ofereça sua carona com segurança',
+                  OfferStrings.offerTitle,
                   textAlign: TextAlign.center,
                   style: textTheme.headlineLarge!.copyWith(
                     fontWeight: FontWeight.bold,
@@ -36,7 +38,7 @@ class OfferScreen extends StatelessWidget {
                   height: 2 * spacing,
                 ),
                 const SimpleTextField(
-                  labelText: 'Local de Partida',
+                  labelText: RideStrings.departureLocation,
                   hintText: 'Ponto',
                   icon: Icon(Icons.trip_origin_rounded),
                 ),
@@ -44,7 +46,7 @@ class OfferScreen extends StatelessWidget {
                   height: spacing,
                 ),
                 const SimpleTextField(
-                  labelText: 'Local de Chegada',
+                  labelText: RideStrings.arrivalLocation,
                   hintText: 'Ponto',
                   icon: Icon(Icons.place),
                 ),
@@ -52,7 +54,7 @@ class OfferScreen extends StatelessWidget {
                   height: spacing,
                 ),
                 const SimpleTextField(
-                  labelText: 'Data e horário de partida',
+                  labelText: RideStrings.date,
                   hintText: 'dd/mm/yyyy - hh:mm',
                   icon: Icon(Icons.today),
                   textInputType: TextInputType.number,
@@ -64,7 +66,7 @@ class OfferScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Quantidade \nde Vagas',
+                      OfferStrings.seatQuantity,
                       textAlign: TextAlign.center,
                       style: textTheme.bodyLarge!
                           .copyWith(fontWeight: FontWeight.bold),
@@ -96,7 +98,7 @@ class OfferScreen extends StatelessWidget {
                     ),
                     const SizedBox(width: spacing / 2),
                     Text(
-                      'Reserva \n rápida',
+                      OfferStrings.quickResevation,
                       style: textTheme.bodyLarge!
                           .copyWith(fontWeight: FontWeight.bold),
                     ),
@@ -119,7 +121,7 @@ class OfferScreen extends StatelessWidget {
                   height: spacing,
                 ),
                 SimpleButton(
-                  text: 'Oferecer',
+                  text: OfferStrings.offerButton,
                   onPressed: () {},
                 ),
               ],

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:joynride_app/utils/strings/ride_strings.dart';
+import 'package:joynride_app/utils/strings/search_strings.dart';
 import 'package:joynride_app/widgets/quantity_selector.dart';
 import 'package:joynride_app/widgets/simple_button.dart';
 import 'package:joynride_app/widgets/simple_textfield.dart';
@@ -23,7 +25,7 @@ class SearchScreen extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'Busque sua carona com segurança',
+                  SearchStrings.searchTitle,
                   textAlign: TextAlign.center,
                   style: textTheme.headlineLarge!.copyWith(
                     fontWeight: FontWeight.bold,
@@ -33,7 +35,7 @@ class SearchScreen extends StatelessWidget {
                   height: 2 * spacing,
                 ),
                 const SimpleTextField(
-                  labelText: 'Local de Partida',
+                  labelText: RideStrings.departureLocation,
                   hintText: 'Ponto',
                   icon: Icon(Icons.trip_origin_rounded),
                 ),
@@ -41,14 +43,14 @@ class SearchScreen extends StatelessWidget {
                   height: spacing,
                 ),
                 const SimpleTextField(
-                    labelText: 'Local de Chegada',
+                    labelText: RideStrings.arrivalLocation,
                     hintText: 'Ponto',
                     icon: Icon(Icons.place)),
                 const SizedBox(
                   height: spacing,
                 ),
                 const SimpleTextField(
-                  labelText: 'Data',
+                  labelText: RideStrings.date,
                   hintText: 'dd/mm/yyyy',
                   icon: Icon(Icons.today),
                   textInputType: TextInputType.number,
@@ -78,7 +80,7 @@ class SearchScreen extends StatelessWidget {
                   height: spacing,
                 ),
                 SimpleButton(
-                  text: 'Procurar',
+                  text: SearchStrings.searchButton,
                   onPressed: () {},
                 ),
               ],
