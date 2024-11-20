@@ -6,8 +6,9 @@ class Ride {
   final User driver;
   final List<User> passengers;
   final String departureAddress;
-  final String arrivalAdrress;
+  final String arrivalAddress;
   final DateTime departureTime;
+  final DateTime arrivalTime;
   final int totalSeats;
   final Vehicle vehicle;
 
@@ -16,8 +17,9 @@ class Ride {
     this.driver,
     this.passengers,
     this.departureAddress,
-    this.arrivalAdrress,
+    this.arrivalAddress,
     this.departureTime,
+    this.arrivalTime,
     this.totalSeats,
     this.vehicle,
   );
