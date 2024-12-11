@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/fossguild/joynride/serv/dtos"
+	"github.com/fossguild/joynride/serv/backend/dtos"
 )
 
 func (s *Storage) GetVehiclesByUserId(ctx context.Context, userId int) ([]*dtos.Vehicle, error) {

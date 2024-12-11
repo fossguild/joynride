@@ -44,6 +44,5 @@ func (api *Api) Start() {
 
 	router.GET("users/:id", func(ctx *gin.Context) { user_service.GetUser(ctx, api.Storage) })
 
-
 	router.Run(api.addr)
 }
