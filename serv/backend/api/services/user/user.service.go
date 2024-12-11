@@ -7,8 +7,8 @@ package user_service
 import (
 	"net/http"
 
-	"github.com/fossguild/joynride/tree/dev/serv/dtos"
-	"github.com/fossguild/joynride/tree/dev/serv/storage"
+	"github.com/fossguild/joynride/serv/backend/dtos"
+	"github.com/fossguild/joynride/serv/backend/storage"
 	"github.com/gin-gonic/gin"
 )
 
@@ -40,4 +40,17 @@ func CreateUser(c *gin.Context, storage *storage.Storage) {
 	}
 
 	c.JSON(http.StatusCreated, createdUser)
+}
+
+func GetUser(c *gin.Context, storage *storage.Storage) {
+	id := c.Param("id")
+
+	user, err := storage.GetUser(c, id)
+	if err != nil {
+		errorObj := dtos.Error{Message: err.Error()}
+		c.JSON(http.StatusInternalServerError, errorObj)
+		return
+	}
+
+	c.JSON(http.StatusOK, user)
 }

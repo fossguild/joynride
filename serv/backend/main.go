@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/fossguild/joynride/tree/dev/serv/api"
-	"github.com/fossguild/joynride/tree/dev/serv/storage"
+	"github.com/fossguild/joynride/serv/backend/api"
+	"github.com/fossguild/joynride/serv/backend/storage"
 )
 
 func main() {
