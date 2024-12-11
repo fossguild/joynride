@@ -7,9 +7,9 @@ package api
 import (
 	"errors"
 
-	place_service "github.com/fossguild/joynride/tree/dev/serv/api/services/place"
-	user_service "github.com/fossguild/joynride/tree/dev/serv/api/services/user"
-	vehicle_service "github.com/fossguild/joynride/tree/dev/serv/api/services/vehicle"
+	place_service "github.com/fossguild/joynride/serv/backend/api/services/place"
+	user_service "github.com/fossguild/joynride/serv/backend/api/services/user"
+	vehicle_service "github.com/fossguild/joynride/serv/backend/api/services/vehicle"
 	"github.com/fossguild/joynride/tree/dev/serv/storage"
 	"github.com/gin-gonic/gin"
 )
