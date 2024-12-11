@@ -8,7 +8,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/fossguild/joynride/tree/dev/serv/dtos"
+	"github.com/fossguild/joynride/serv/backend/dtos"
 )
 
 func (s *Storage) CreatePlace(ctx context.Context, i dtos.CreatePlaceRequest) (*dtos.Place, error) {
