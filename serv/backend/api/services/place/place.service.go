@@ -7,8 +7,8 @@ package place_service
 import (
 	"net/http"
 
-	"github.com/fossguild/joynride/tree/dev/serv/dtos"
-	"github.com/fossguild/joynride/tree/dev/serv/storage"
+	"github.com/fossguild/joynride/serv/backend/dtos"
+	"github.com/fossguild/joynride/serv/backend/storage"
 	"github.com/gin-gonic/gin"
 )
 
