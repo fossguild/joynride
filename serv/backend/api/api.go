@@ -10,7 +10,7 @@ import (
 	place_service "github.com/fossguild/joynride/serv/backend/api/services/place"
 	user_service "github.com/fossguild/joynride/serv/backend/api/services/user"
 	vehicle_service "github.com/fossguild/joynride/serv/backend/api/services/vehicle"
-	"github.com/fossguild/joynride/tree/dev/serv/storage"
+	"github.com/fossguild/joynride/serv/backend/storage"
 	"github.com/gin-gonic/gin"
 )
 
