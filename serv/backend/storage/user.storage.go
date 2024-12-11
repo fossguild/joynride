@@ -8,7 +8,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/fossguild/joynride/tree/dev/serv/dtos"
+	"github.com/fossguild/joynride/serv/backend/dtos"
 )
 
 func (s *Storage) CreateUser(ctx context.Context, i dtos.CreateUserRequest) (*dtos.User, error) {
@@ -98,4 +98,9 @@ func ScanUser(s Scanner) (*dtos.User, error) {
 	}
 
 	return user, nil
+}
+
+func (s *Storage) GetUser(ctx context.Context, id string) (*dtos.User, error) {
+	row := s.conn.QueryRowContext(ctx, "SELECT * FROM \"user\" WHERE id = $1", id)
+	return ScanUser(row)
 }
