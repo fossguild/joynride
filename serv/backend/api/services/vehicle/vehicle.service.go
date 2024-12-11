@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/fossguild/joynride/serv/dtos"
-	"github.com/fossguild/joynride/serv/storage"
+	"github.com/fossguild/joynride/serv/backend/dtos"
+	"github.com/fossguild/joynride/serv/backend/storage"
 	"github.com/gin-gonic/gin"
 )
 
