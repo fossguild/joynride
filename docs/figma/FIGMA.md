@@ -258,5 +258,5 @@ To ensure the prototype is inclusive and user-friendly, the following accessibil
 This prototype created in **Figma** was developed by the following students:  
 
 - **Beatriz Lomes da Silva** ([b.lomes@usp.br](mailto:b.lomes@usp.br))  
-- **Gustavo Scarenci** (@usp.br)  
-- **Matheus Cirillo** (@usp.br)  
+- **Gustavo Moura Scarenci de Carvalho Ferreira** (@usp.br)  
+- **Matheus Henrique Dias Cirillo** (@usp.br)  
