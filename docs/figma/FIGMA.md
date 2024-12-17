@@ -72,7 +72,7 @@ This section provides an overview of each screen, its purpose, and the key desig
 
 ### Unreserved selected ride
 - **Purpose**: Showcase details of a trip before reservation.
-- **Design Decisions**: Highlight decision to emphasize trip details and call-to-action.
+- **Design Decisions**: We give the user all the relevant information about the ride: date, time and location of departure and arrival with our distance status, the driver's name, ratings and option to message, the car's model and color, the number of passengers and a button to reserve the ride.
 
 ![Viagem Selecionada Sem Reserva](viagem_selecionada_sem_reserva.png)
 
