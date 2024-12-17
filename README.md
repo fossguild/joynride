@@ -75,10 +75,12 @@ emails.
 ## System Architecture
 
 ### Frontend 
- ...
+
+The "to-be" model of the interface is shown in the project's Figma, and it can be seen in the `docs/figma` folder. The development of the frontend is inside of the `app` folder.
 
 ### Backend
- ...
+
+The backend details are in the `serv` folder.
 
 ### Database
 
@@ -96,5 +98,7 @@ To store information such as:
 - Message exchange between users
 
 ## Functional and non-functional requirements
+
+...
 
 ## Schedule
