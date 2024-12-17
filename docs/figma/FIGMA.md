@@ -65,8 +65,8 @@ This section provides an overview of each screen, its purpose, and the key desig
 ![Procurar](procurar.png)
 
 ### Available rides
-- **Purpose**: Display available trips for users.
-- **Design Decisions**: Mention layout style, trip card details, and visual hierarchy.
+- **Purpose**: After searching, display available trips for users.
+- **Design Decisions**: At the top we show the user's search parameters with a button that can display a dialog for filters and below we show the available rides. All the rides have a status symbol that shows how far the ride is from the user's desired location (green for near, orange for walkable and red for far).
 
 ![Viagens Disponíveis](viagens_disponiveis.png)
 
