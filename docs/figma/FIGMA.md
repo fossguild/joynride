@@ -90,19 +90,19 @@ Secondary/1100: #481f00
 These shades can be used for warnings, highlights, and complementary accents in the user interface.
 
 
-- **Contrast and Accessibility**
+ **Contrast and Accessibility**
 
 To ensure accessibility and compliance with **WCAG (Web Content Accessibility Guidelines)** standards:  
 
-### Contrast  
+#### Contrast  
 - Darker tones such as **Primary/900** and **Secondary/900** provide excellent contrast against light backgrounds.  
 - Lighter shades like **Primary/100** may require careful placement to avoid low contrast against white or gray backgrounds.  
 
-### Accessibility  
+#### Accessibility  
 - Text and interactive elements should maintain a contrast ratio of at least **4.5:1** for small text and **3:1** for large text.  
 - For example, **Primary/800** on a white background meets the required ratio.  
 
-### State Feedback  
+#### State Feedback  
 **Success (Green)**, **Warning (Orange)**, and **Error (Red)** colors are intuitive for users to quickly understand system statuses. These categories also benefit from multiple shades:  
 - **Success**: `Success/100 - Success/1100`  
 - **Warning**: `Warning/100 - Warning/1100`  
