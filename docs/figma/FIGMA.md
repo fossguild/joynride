@@ -52,6 +52,12 @@ This section provides an overview of each screen, its purpose, and the key desig
 
 ![Login Screen](login.png)
 
+### Navigation bar
+- **Purpose**: Provide easy access to different sections of the app.
+- **Design Decisions**: We gave the user access to the five main sections of the app: search, offer, rides, messages and profile.
+
+![Barra de Navegação](barra_navegacao.png)
+
 ### Search
 - **Purpose**: Allow the user to search for rides.
 - **Design Decisions**: We were heavily inspired by Blablacar design, trying to keep it as simple as possible. The user can search for rides by typing the origin, destination, date of the ride and the number of passengers.
