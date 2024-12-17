@@ -30,7 +30,7 @@ This document describes the UI/UX design decisions made for the project, includi
 
 ## Color Scheme
 
-For the color palette selection, the colors used in the University of São Paulo's system were taken as a reference, namely green (Hex: 087F96), which was used as the predominant color of the application, and yellow (Hex: E28B00), used for highlights.  
+For the color palette selection, the colors used in the University of São Paulo's system were taken as a reference, namely Blue (Hex: 087F96), which was used as the predominant color of the application, and yellow (Hex: E28B00), used for highlights.  
 
 After defining the two main colors, the website [https://uicolors.app/create](https://uicolors.app/create) was used to generate a complementary color palette based on the chosen colors.
 
@@ -55,8 +55,10 @@ Primary/800: #087f96
 
 Primary/900: #10667a
 
-Primary/1000: #
-Primary/1100: #
+Primary/1000: #125567
+
+Primary/1100: #053847
+
 The Primary color scheme, ranging from light to dark blue, is suitable for key UI components like buttons, links, and primary highlights.
 
 **Secondary Colors**
