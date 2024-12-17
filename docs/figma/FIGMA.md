@@ -47,14 +47,14 @@ This section provides an overview of each screen, its purpose, and the key desig
 ![Flash Screen](flash_screen.png)
 
 ### Login
-- **Purpose**: Explain the login screen’s functionality (e.g., user authentication).
-- **Design Decisions**: Detail form structure, button placement, and error handling UI.
+- **Purpose**: Allow the user to access it's own account with JupiterWeb unified login system
+- **Design Decisions**: We kept it simple with a logo, a title and a button that will redirect the user to the unified login page.
 
 ![Login Screen](login.png)
 
 ### Search
-- **Purpose**: Describe how users can search for specific items or features.
-- **Design Decisions**: Explain the search bar design and filtering options.
+- **Purpose**: Allow the user to search for rides.
+- **Design Decisions**: We were heavily inspired by Blablacar design, trying to keep it as simple as possible. The user can search for rides by typing the origin, destination, date of the ride and the number of passengers.
 
 ![Procurar](procurar.png)
 
