@@ -201,7 +201,7 @@ This section provides an overview of each screen, its purpose, and the key desig
 
 ### My profile
 - **Purpose**: Present the user's profile details.
-- **Design Decisions**: Describe the layout and emphasis on editable fields.
+- **Design Decisions**: Describe the layout and emphasis on editable fields.f
 
 ![Perfil](perfil.png)
 
@@ -218,3 +218,10 @@ This section provides an overview of each screen, its purpose, and the key desig
 - **Accessibility**: Describe accessibility considerations (e.g., font size, color contrast).
 - **User Feedback**: Mention how user feedback influenced the design.
 
+## Prototype Development  
+
+This prototype created in **Figma** was developed by the following students:  
+
+- **Beatriz Lomes da Silva** ([b.lomes@usp.br](mailto:b.lomes@usp.br))  
+- **Gustavo Scarenci** (@usp.br)  
+- **Matheus Cirillo** (@usp.br)  
