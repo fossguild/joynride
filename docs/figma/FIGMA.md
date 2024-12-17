@@ -20,9 +20,9 @@ This document describes the UI/UX design decisions made for the project, includi
 ---
 
 ## Design Style
-- **Overall Theme**: Describe the overarching theme of the design (e.g., modern, playful, professional).
-- **Typography**: List the fonts used and the reasons for selecting them.
-- **Icons**: Detail the style of icons used and their alignment with the design.
+- **Overall Theme**: We followed Google's Material Design 3 language, trying to create a modern and clean looking interface.
+- **Typography**: We used Roboto as our main font because it matches quite well with Material Design 3.
+- **Icons**: We also kept in line with our chosen design language and went for the icons provided by Google.
 
 ![Material Design 3](material_design_logo.jpg)
 
