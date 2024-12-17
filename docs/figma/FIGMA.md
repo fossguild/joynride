@@ -41,8 +41,8 @@ This document describes the UI/UX design decisions made for the project, includi
 This section provides an overview of each screen, its purpose, and the key design decisions.
 
 ### Flash Screen
-- **Purpose**: Describe the purpose of the flash screen (e.g., brand introduction, loading screen).
-- **Design Decisions**: Mention key design elements such as animations or logo placement.
+- **Purpose**: Opens with the application and stays on screen while everything loads.
+- **Design Decisions**: We decided to keep it as simple as possible with only our logo in the middle with a clean background with our primary color
 
 ![Flash Screen](flash_screen.png)
 
