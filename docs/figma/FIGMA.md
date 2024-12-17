@@ -29,8 +29,30 @@ This document describes the UI/UX design decisions made for the project, includi
 ---
 
 ## Color Scheme
-- **Primary Colors**: Mention the primary colors and their HEX values.
-- **Secondary Colors**: Include secondary colors and their HEX values.
+
+For the color palette selection, the colors used in the University of São Paulo's system were taken as a reference, namely green (Hex: 087F96), which was used as the predominant color of the application, and yellow (Hex: E28B00), used for highlights.  
+
+After defining the two main colors, the website [https://uicolors.app/create](https://uicolors.app/create) was used to generate a complementary color palette based on the chosen colors.
+
+**Primary Colors**
+The primary color category includes blue tones divided into different levels for usage. Each level corresponds to a shade of blue, numbered for clarity (e.g., Primary/100 to Primary/1100).
+
+Primary/100: #
+Primary/200: #
+Primary/300: #
+Primary/400: #
+Primary/500: #
+Primary/600: #
+Primary/700: #
+Primary/800: #
+Primary/900: #
+Primary/1000: #
+Primary/1100: #
+The Primary color scheme, ranging from light to dark blue, is suitable for key UI components like buttons, links, and primary highlights.
+
+**Secondary Colors**
+
+
 - **Contrast and Accessibility**: Explain how color choices address accessibility concerns (e.g., WCAG compliance).
 
 ![Color Palette](colors.png)
