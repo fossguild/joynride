@@ -38,14 +38,23 @@ After defining the two main colors, the website [https://uicolors.app/create](ht
 The primary color category includes blue tones divided into different levels for usage. Each level corresponds to a shade of blue, numbered for clarity (e.g., Primary/100 to Primary/1100).
 
 Primary/100: #ebfffe
+
 Primary/200: #cdffff
+
 Primary/300: #a1fbff
+
 Primary/400: #60f6ff
+
 Primary/500: #18e6f8
+
 Primary/600: #00c9de
+
 Primary/700: #0094ac
+
 Primary/800: #087f96
+
 Primary/900: #10667a
+
 Primary/1000: #
 Primary/1100: #
 The Primary color scheme, ranging from light to dark blue, is suitable for key UI components like buttons, links, and primary highlights.
