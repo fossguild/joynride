@@ -83,8 +83,8 @@ This section provides an overview of each screen, its purpose, and the key desig
 ![Dialog de Alerta](dialog_alerta.png)
 
 ### Offer
-- **Purpose**: Allow users to offer a trip.
-- **Design Decisions**: Describe the form layout and usability considerations.
+- **Purpose**: Allow users to offer a ride.
+- **Design Decisions**: Also heavily inspired by Blablacar. The user types the origin, destination, date and time of the ride, number of passengers and if it's a fast reservation or not.
 
 ![Oferecer](oferecer.png)
 
