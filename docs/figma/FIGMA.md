@@ -223,8 +223,35 @@ This section provides an overview of each screen, its purpose, and the key desig
 
 ## Key Design Decisions
 - **Consistency**: Detail how consistency across screens was maintained.
-- **Accessibility**: Describe accessibility considerations (e.g., font size, color contrast).
 - **User Feedback**: Mention how user feedback influenced the design.
+---
+## Accessibility  
+
+### Accessibility Considerations  
+To ensure the prototype is inclusive and user-friendly, the following accessibility considerations were applied:  
+
+- **Font Size**:  
+  - Text sizes follow accessibility guidelines to ensure readability across all devices.  
+  - Minimum font size of **16px** is used for body text to enhance legibility.  
+
+- **Color Contrast**:  
+  - Color choices comply with **WCAG** standards for sufficient contrast.  
+  - Text and interactive elements maintain a contrast ratio of at least **4.5:1** for normal text and **3:1** for large text.  
+  - Darker tones such as **Primary/900** and **Secondary/900** are used for text against light backgrounds.  
+
+- **State Feedback**:  
+  - Success, Warning, and Error states use clear, high-contrast colors to ensure quick recognition:  
+    - **Success**: Green shades (Success/100 - Success/1100).  
+    - **Warning**: Orange shades (Warning/100 - Warning/1100).  
+    - **Error**: Red shades (Error/100 - Error/1100).  
+
+- **Interactive Elements**:  
+  - Buttons, links, and interactive components use accessible colors and are easily distinguishable with visual cues (e.g., underlines, bold text, and hover states).  
+
+- **Scalability**:  
+  - The design ensures responsiveness and scalability for various screen sizes, accommodating users with visual impairments.  
+
+---
 
 ## Prototype Development  
 
