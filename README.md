@@ -59,6 +59,14 @@ the journey better for everyone.
 
 ## Community
 
+In this context, a community is a group of people with shared interests, needs, or connections, who are willing to offer or request rides, using the platform to facilitate mobility through ride-sharing. These communities can be defined by criteria such as:  
+
+- **Geographical proximity**, such as university students, neighborhood residents, or company employees;  
+- **Common interests**, such as participation in events or specific groups;  
+- **Institutional requirements**, like the use of verified emails within an institutional domain (e.g., USP emails), ensuring security and trust among members.  
+
+This identification system helps create a reliable environment tailored to the needs of each community.
+
 ### Authentication
 
 The users will be able to join the desired community through institutional
