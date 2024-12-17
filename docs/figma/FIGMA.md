@@ -27,6 +27,14 @@ This document describes the UI/UX design decisions made for the project, includi
 ![Material Design 3](material_design_logo.jpg)
 
 ---
+## Typography  
+
+The following font styles were used in the prototype:  
+
+- **Titles**: Roboto Bold  
+- **Body Text**: Roboto Regular  
+
+---
 
 ## Color Scheme
 
