@@ -63,6 +63,32 @@ The Primary color scheme, ranging from light to dark blue, is suitable for key U
 
 **Secondary Colors**
 
+The secondary colors are yellow-orange tones, similarly divided into 11 levels, providing flexibility for different emphasis needs.
+
+Secondary/100: #fffeea
+
+Secondary/200: #fff9c5
+
+Secondary/300: #fff385
+
+Secondary/400: #ffe746
+
+Secondary/500: #ffd61b
+
+Secondary/600: #feb500
+
+Secondary/700: #e28b00
+
+Secondary/800: #bb6202
+
+Secondary/900: #984b08
+
+Secondary/1000: #7c3e0b
+
+Secondary/1100: #481f00
+
+These shades can be used for warnings, highlights, and complementary accents in the user interface.
+
 
 - **Contrast and Accessibility**: Explain how color choices address accessibility concerns (e.g., WCAG compliance).
 
