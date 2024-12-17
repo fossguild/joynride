@@ -52,73 +52,73 @@ This section provides an overview of each screen, its purpose, and the key desig
 
 ![Login Screen](login.png)
 
-### Procurar
+### Search
 - **Purpose**: Describe how users can search for specific items or features.
 - **Design Decisions**: Explain the search bar design and filtering options.
 
 ![Procurar](procurar.png)
 
-### Viagens Disponíveis
+### Available rides
 - **Purpose**: Display available trips for users.
 - **Design Decisions**: Mention layout style, trip card details, and visual hierarchy.
 
 ![Viagens Disponíveis](viagens_disponiveis.png)
 
-### Viagem Selecionada Sem Reserva
+### Unreserved selected ride
 - **Purpose**: Showcase details of a trip before reservation.
 - **Design Decisions**: Highlight decision to emphasize trip details and call-to-action.
 
 ![Viagem Selecionada Sem Reserva](viagem_selecionada_sem_reserva.png)
 
-### Dialog de Alerta
+### Alert Dialogue
 - **Purpose**: Warn users about critical actions or errors.
 - **Design Decisions**: Explain the color scheme and typography choices for alerts.
 
 ![Dialog de Alerta](dialog_alerta.png)
 
-### Oferecer
+### Offer
 - **Purpose**: Allow users to offer a trip.
 - **Design Decisions**: Describe the form layout and usability considerations.
 
 ![Oferecer](oferecer.png)
 
-### Viagem Oferecida
+### Offered ride
 - **Purpose**: Present the trip details that the user offered.
 - **Design Decisions**: Highlight differences from the "Viagem Selecionada Sem Reserva" screen.
 
 ![Viagem Oferecida](viagem_oferecida.png)
 
-### Minhas Viagens
+### My rides
 - **Purpose**: Display trips that the user is associated with.
 - **Design Decisions**: Mention list design, visual prioritization of reserved trips, etc.
 
 ![Minhas Viagens](minhas_viagens.png)
 
-### Viagem Reservada
+### Reserved rides
 - **Purpose**: Show the details of a reserved trip.
 - **Design Decisions**: Explain the layout for presenting reserved trip information.
 
 ![Viagem Reservada](viagem_reservada.png)
 
-### Mensagens
+### Messages
 - **Purpose**: Display a list of conversations.
 - **Design Decisions**: Mention style for message preview cards and notification indicators.
 
 ![Mensagens](mensagens.png)
 
-### Conversa
+### Dialogues
 - **Purpose**: Enable direct communication between users.
 - **Design Decisions**: Explain the chat layout, text input area design, and message bubble style.
 
 ![Conversa](conversa.png)
 
-### Perfil
+### My profile
 - **Purpose**: Present the user's profile details.
 - **Design Decisions**: Describe the layout and emphasis on editable fields.
 
 ![Perfil](perfil.png)
 
-### Perfil de Outros Usuários
+### Other user's profile
 - **Purpose**: Display another user's profile information.
 - **Design Decisions**: Highlight differences from the user’s profile view.
 
