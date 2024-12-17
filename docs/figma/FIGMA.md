@@ -89,8 +89,8 @@ This section provides an overview of each screen, its purpose, and the key desig
 ![Oferecer](oferecer.png)
 
 ### Offered ride
-- **Purpose**: Present the trip details that the user offered.
-- **Design Decisions**: Highlight differences from the "Viagem Selecionada Sem Reserva" screen.
+- **Purpose**: About the same purpose as the "Unreserved selected ride" screen, but for the driver.
+- **Design Decisions**: We kept the same layout as the "Unreserved selected ride" screen, but with a few differences: we don't show the distance status, we can accept or refuse a rider and the option to cancel the ride.
 
 ![Viagem Oferecida](viagem_oferecida.png)
 
