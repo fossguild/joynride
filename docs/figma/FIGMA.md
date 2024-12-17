@@ -77,8 +77,8 @@ This section provides an overview of each screen, its purpose, and the key desig
 ![Viagem Selecionada Sem Reserva](viagem_selecionada_sem_reserva.png)
 
 ### Alert Dialogue
-- **Purpose**: Warn users about critical actions or errors.
-- **Design Decisions**: Explain the color scheme and typography choices for alerts.
+- **Purpose**: Warn users about critical actions.
+- **Design Decisions**: We kept this as simple as possible with a title, a green button to confirm and a red button to cancel.
 
 ![Dialog de Alerta](dialog_alerta.png)
 
