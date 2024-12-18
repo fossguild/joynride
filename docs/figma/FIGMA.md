@@ -226,5 +226,5 @@ This section provides an overview of each screen, its purpose, and the key desig
 This prototype created in **Figma** was developed by the following students:  
 
 - **Beatriz Lomes da Silva** ([b.lomes@usp.br](mailto:b.lomes@usp.br))  
-- **Gustavo Moura Scarenci de Carvalho Ferreira** (@usp.br)  
+- **Gustavo Moura Scarenci de Carvalho Ferreira** [gustavomourascarenci@usp.br](mailto:gustavomourascarenci@usp.br)  
 - **Matheus Henrique Dias Cirillo** ([matheuscirillo@usp.br](mailto:matheuscirillo@usp.br))  
