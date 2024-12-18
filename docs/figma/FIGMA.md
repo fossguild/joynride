@@ -191,7 +191,7 @@ This section provides an overview of each screen, its purpose, and the key desig
 
 ### Messages
 - **Purpose**: Display a list of conversations.
-- **Design Decisions**: Mention style for message preview cards and notification indicators.
+- **Design Decisions**: Shows the user's conversations with other users. The user can see the other user's name, the last message sent, the time it was sent and the number of unread messages. We also gave the user a search bar to search for a specific conversation and a filter button. New conversations cannot be started from this screen.
 
 ![Mensagens](mensagens.png)
 
