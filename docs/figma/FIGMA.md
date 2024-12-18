@@ -116,12 +116,6 @@ To ensure accessibility and compliance with **WCAG (Web Content Accessibility Gu
 - **Warning**: `Warning/100 - Warning/1100`  
 - **Error**: `Error/100 - Error/1100`  
 
-
-
-
-
-
-  
 ![Color Palette](colors.png)
 
 ---
