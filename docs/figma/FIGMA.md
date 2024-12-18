@@ -184,8 +184,8 @@ This section provides an overview of each screen, its purpose, and the key desig
 ![Minhas Viagens](minhas_viagens.png)
 
 ### Reserved rides
-- **Purpose**: Show the details of a reserved trip.
-- **Design Decisions**: Explain the layout for presenting reserved trip information.
+- **Purpose**: About the same purpose as the "Offered ride" screen, but for the rider.
+- **Design Decisions**: Same layout as the "Offered ride" screen, but with a few differences: we don't show the option to accept or refuse a rider and the rider can cancel the ride.
 
 ![Viagem Reservada](viagem_reservada.png)
 
