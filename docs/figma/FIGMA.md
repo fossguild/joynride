@@ -197,21 +197,22 @@ This section provides an overview of each screen, its purpose, and the key desig
 
 ### Dialogues
 - **Purpose**: Enable direct communication between users.
-- **Design Decisions**: Explain the chat layout, text input area design, and message bubble style.
+- **Design Decisions**: A really simple chat layout like many other apps have. Lets you send and recieve text messages only.
 
 ![Conversa](conversa.png)
 
 ### My profile
 - **Purpose**: Present the user's profile details.
-- **Design Decisions**: Describe the layout and emphasis on editable fields.f
+- **Design Decisions**: Has some basic informations like the user rating, University (as it is a student focused app) and a little text that the user writes about himself.
 
 ![Perfil](perfil.png)
 
 ### Other user's profile
 - **Purpose**: Display another user's profile information.
-- **Design Decisions**: Highlight differences from the user’s profile view.
+- **Design Decisions**: Exactly the same as "My profile" but with a button to send a message to this other user.
 
 ![Perfil de Outros Usuários](perfil_outros.png)
+
 
 ---
 
