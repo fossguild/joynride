@@ -139,79 +139,79 @@ This section provides an overview of each screen, its purpose, and the key desig
 - **Purpose**: Provide easy access to different sections of the app.
 - **Design Decisions**: We gave the user access to the five main sections of the app: search, offer, rides, messages and profile.
 
-![Barra de Navegação](barra_navegacao.png)
+![Navigation bar on screen](barra_navegacao.png)
 
 ### Search
 - **Purpose**: Allow the user to search for rides.
 - **Design Decisions**: We were heavily inspired by Blablacar design, trying to keep it as simple as possible. The user can search for rides by typing the origin, destination, date of the ride and the number of passengers.
 
-![Procurar](procurar.png)
+![Search screen](procurar.png)
 
 ### Available rides
 - **Purpose**: After searching, display available trips for users.
 - **Design Decisions**: At the top we show the user's search parameters with a button that can display a dialog for filters and below we show the available rides. All the rides have a status symbol that shows how far the ride is from the user's desired location (green for near, orange for walkable and red for far).
 
-![Viagens Disponíveis](viagens_disponiveis.png)
+![Available rides screen](viagens_disponiveis.png)
 
 ### Unreserved selected ride
 - **Purpose**: Showcase details of a trip before reservation.
 - **Design Decisions**: We give the user all the relevant information about the ride: date, time and location of departure and arrival with our distance status, the driver's name, ratings and option to message, the car's model and color, the number of passengers and a button to reserve the ride.
 
-![Viagem Selecionada Sem Reserva](viagem_selecionada_sem_reserva.png)
+![Unreserved selected ride screen](viagem_selecionada_sem_reserva.png)
 
 ### Alert Dialogue
 - **Purpose**: Warn users about critical actions.
 - **Design Decisions**: We kept this as simple as possible with a title, a green button to confirm and a red button to cancel.
 
-![Dialog de Alerta](dialog_alerta.png)
+![Alert Dialogue screen](dialog_alerta.png)
 
-### Offer
+### Offer ride
 - **Purpose**: Allow users to offer a ride.
 - **Design Decisions**: Also heavily inspired by Blablacar. The user types the origin, destination, date and time of the ride, number of passengers and if it's a fast reservation or not.
 
-![Oferecer](oferecer.png)
+![Offer ride screen](oferecer.png)
 
 ### Offered ride
 - **Purpose**: About the same purpose as the "Unreserved selected ride" screen, but for the driver.
 - **Design Decisions**: We kept the same layout as the "Unreserved selected ride" screen, but with a few differences: we don't show the distance status, we can accept or refuse a rider and the option to cancel the ride.
 
-![Viagem Oferecida](viagem_oferecida.png)
+![Offered ride screen](viagem_oferecida.png)
 
 ### My rides
 - **Purpose**: Display trips that the user is associated with (offered or reserved).
 - **Design Decisions**: We separated the rides in two tabs: offered and reserved. The user can see the details such as arrival and departure locations, date and time, driver's name and map of the route in the card. Clicking on the card will show more details about the ride.
 
-![Minhas Viagens](minhas_viagens.png)
+![My rides screen](minhas_viagens.png)
 
 ### Reserved rides
 - **Purpose**: About the same purpose as the "Offered ride" screen, but for the rider.
 - **Design Decisions**: Same layout as the "Offered ride" screen, but with a few differences: we don't show the option to accept or refuse a rider and the rider can cancel the ride.
 
-![Viagem Reservada](viagem_reservada.png)
+![Reserved rides screen](viagem_reservada.png)
 
 ### Messages
 - **Purpose**: Display a list of conversations.
 - **Design Decisions**: Shows the user's conversations with other users. The user can see the other user's name, the last message sent, the time it was sent and the number of unread messages. We also gave the user a search bar to search for a specific conversation and a filter button. New conversations cannot be started from this screen.
 
-![Mensagens](mensagens.png)
+![Messages screen](mensagens.png)
 
 ### Dialogues
 - **Purpose**: Enable direct communication between users.
 - **Design Decisions**: A really simple chat layout like many other apps have. Lets you send and recieve text messages only.
 
-![Conversa](conversa.png)
+![Dialogues screen](conversa.png)
 
 ### My profile
 - **Purpose**: Present the user's profile details.
 - **Design Decisions**: Has some basic informations like the user rating, University (as it is a student focused app) and a little text that the user writes about himself.
 
-![Perfil](perfil.png)
+![My profile screen](perfil.png)
 
 ### Other user's profile
 - **Purpose**: Display another user's profile information.
 - **Design Decisions**: Exactly the same as "My profile" but with a button to send a message to this other user.
 
-![Perfil de Outros Usuários](perfil_outros.png)
+![Other user's profile screen](perfil_outros.png)
 
 
 ---
