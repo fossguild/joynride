@@ -14,6 +14,7 @@ This document describes the UI/UX design decisions made for the project, includi
 - **Concept**: Describe the concept and thought process behind the logo (e.g., minimalist, symbolic, etc.).
 - **Style**: Mention the design style used for the logo (e.g., flat, gradient, modern, etc.).
 - **Significance**: Explain the significance of the logo elements (e.g., shapes, colors, typography).
+- **Colors**: In order to refer to USP's sense of community, which is at the roots of the project's security and motivated its development, the colors chosen for the application logo were USP's colors.
 
 ![Logo](logo.png)
 
@@ -220,10 +221,21 @@ This section provides an overview of each screen, its purpose, and the key desig
 - **Consistency**: We tried to keep it simple and functional, getting inspiration from some already set industry trends and giving it a fresher look.
 - **User Feedback**: We worked as a team with to get to this design, getting feedback from all other developers 0(frontend, backend developers and others) and settling on one that made everyone happy.
 
+---
+
+## Interactive Prototype 
+
+Finally, to better visualize the fluidity of the application and in order to integrate the project flow diagrams with the prototyped screens and preserve the idea conceived by the team, an interactive prototype was created using figma's "prototype" tool. This workflow can be accessed at the link below:
+
+[Access the Interactive Prototype Here](https://www.figma.com/proto/xuM2J5JGZrJHiqXvFWowJ5/Joynride-Figma?node-id=0-1&p=f&t=JbB9PALVZEjoumII-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A752).
+
+---
+
 ## Prototype Development  
 
 This prototype created in **Figma** was developed by the following students:  
 
 - **Beatriz Lomes da Silva** ([b.lomes@usp.br](mailto:b.lomes@usp.br))  
 - **Gustavo Moura Scarenci de Carvalho Ferreira** [gustavomourascarenci@usp.br](mailto:gustavomourascarenci@usp.br)  
-- **Matheus Henrique Dias Cirillo** ([matheuscirillo@usp.br](mailto:matheuscirillo@usp.br))  
+- **Matheus Henrique Dias Cirillo** ([matheuscirillo@usp.br](mailto:matheuscirillo@usp.br))   
+- **Maria Júlia Soares De Grandi** ([maju.degrandi@usp.br](mailto:maju.degrandi@usp.br))  
