@@ -178,8 +178,8 @@ This section provides an overview of each screen, its purpose, and the key desig
 ![Viagem Oferecida](viagem_oferecida.png)
 
 ### My rides
-- **Purpose**: Display trips that the user is associated with.
-- **Design Decisions**: Mention list design, visual prioritization of reserved trips, etc.
+- **Purpose**: Display trips that the user is associated with (offered or reserved).
+- **Design Decisions**: We separated the rides in two tabs: offered and reserved. The user can see the details such as arrival and departure locations, date and time, driver's name and map of the route in the card. Clicking on the card will show more details about the ride.
 
 ![Minhas Viagens](minhas_viagens.png)
 
