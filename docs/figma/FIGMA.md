@@ -217,9 +217,8 @@ This section provides an overview of each screen, its purpose, and the key desig
 ---
 
 ## Key Design Decisions
-- **Consistency**: Detail how consistency across screens was maintained.
-- **User Feedback**: Mention how user feedback influenced the design.
----
+- **Consistency**: We tried to keep it simple and functional, getting inspiration from some already set industry trends and giving it a fresher look.
+- **User Feedback**: We worked as a team with to get to this design, getting feedback from all other developers 0(frontend, backend developers and others) and settling on one that made everyone happy.
 
 ## Prototype Development  
 
